@@ -7,8 +7,9 @@ import javafx.stage.Stage;
 
 /**
  * Project Resort Arena Palace.
+ * Team 7.
  * Description: The current version of the software includes tabs for the future pages.
- * @author Legendary Coders
+ * @author Legendary Coders.
  */
 
 
