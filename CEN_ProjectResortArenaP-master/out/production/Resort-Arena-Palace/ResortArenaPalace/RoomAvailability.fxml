@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.TextFlow?>
+
+<AnchorPane fx:id="lbl_RoomAv" prefHeight="821.0" prefWidth="835.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ResortArenaPalace.RoomAvailability">
+      <Label layoutX="319.0" layoutY="18.0" text="Room Availability" textFill="#14d0c7">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+   <AnchorPane fx:id="room1" layoutX="19.0" layoutY="72.0" prefHeight="172.0" prefWidth="220.0" AnchorPane.bottomAnchor="288.0" AnchorPane.leftAnchor="19.0" AnchorPane.rightAnchor="581.0" AnchorPane.topAnchor="72.0">
+         <TextFlow layoutX="14.0" layoutY="14.0" prefHeight="25.0" prefWidth="200.0">
+                  <TextArea fx:id="r1Details" editable="false" prefHeight="115.0" prefWidth="334.0" text="-&#9;165 square meter&#10;-&#9;Pool and garden views&#10;-&#9;Two adults &#10;-&#9;Master bedroom and bathroom&#10;-&#9;Master bathroom with a Jacuzzi&#10;-&#9;Wi-Fi, a 42 inch and 32 inch interactive HD TVs" wrapText="true">
+                        <Font name="Book Antiqua" size="13.0" />
+                  </TextArea>
+         </TextFlow>
+      <TextArea fx:id="r3Details" editable="false" layoutX="14.0" layoutY="299.0" prefHeight="146.0" prefWidth="334.0" text="-&#9;410 square meters&#10;-&#9;Ocean view &#10;-&#9;Seating on a private balcony&#10;-&#9;4 adults or 2 adults and 2 children&#10;-&#9;2 queen beds&#10;-&#9;Bath tub and rain shower&#10;-&#9;Complimentary turndown&#10;-&#9;Wi-Fi, 55 inch interactive LED TV" wrapText="true">
+         <font>
+            <Font name="Book Antiqua" size="13.0" />
+         </font>
+      </TextArea>
+      <Label fx:id="room3" layoutX="-14.0" layoutY="272.0" text="Superior Double Queen Room" textFill="#00ccfd">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="room2" layoutX="-14.0" layoutY="129.0" prefHeight="27.0" prefWidth="143.0" text="Underwater Suite" textFill="#00ccfd">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="r2Details" editable="false" layoutX="14.0" layoutY="157.0" prefHeight="115.0" prefWidth="334.0" text="-&#9;200 square meters&#10;-&#9;Ocean view &#10;-&#9;2 adults and 2 children&#10;-&#9;1 King and 2 Queen beds&#10;-&#9;Bath tub and rain shower&#10;-&#9;Wi-Fi, 55 inch interactive LED TV" wrapText="true">
+         <font>
+            <Font name="Book Antiqua" size="13.0" />
+         </font>
+      </TextArea>
+      <Label fx:id="room4" layoutX="-15.0" layoutY="450.0" text="Grand Arena Suite" textFill="#00ccfd">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      </AnchorPane>
+        <Label id="room1" fx:id="room" layoutX="7.0" layoutY="58.0" text="Luxury One Bedroom Suite" textFill="#00ccfd">
+             <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+   <Button fx:id="btn_Select1rm" layoutX="550.0" layoutY="129.0" mnemonicParsing="false" onAction="#changeR1toPay" text="Select Room" textFill="#8a23c2" />
+   <Button fx:id="btn_GoHomeRA" layoutX="7.0" layoutY="6.0" mnemonicParsing="false" onAction="#changeRAToHome" text="Go Home" />
+   <Button fx:id="btn_Select3rm" layoutX="550.0" layoutY="406.0" mnemonicParsing="false" onAction="#changeR1toPay" text="Select Room" textFill="#8a23c2" />
+   <Button id="selectB2" fx:id="btn_Select2rm" layoutX="550.0" layoutY="264.0" mnemonicParsing="false" onAction="#changeR1toPay" text="Select Room" textFill="#8a23c2" />
+   <TextArea id="text4" fx:id="r4Details" editable="false" layoutX="26.0" layoutY="549.0" prefHeight="146.0" prefWidth="334.0" text="-&#9;430 square meters&#10;-&#9;Ocean and sky view&#10;-&#9;Seating on a private balcony &#10;-&#9;2 adults and 2 children, or 3 adults and 1 child,&#10;-&#9;2 King and 2 Queen beds, &#10;-&#9;Master bathroom with bath tub, rain shower and Jacuzzi&#10;-&#9;Wi-Fi, two 55 inch interactive LED TV&#10;" wrapText="true">
+      <font>
+         <Font name="Book Antiqua" size="13.0" />
+      </font>
+   </TextArea>
+   <Button fx:id="btn_Select4rm" layoutX="550.0" layoutY="587.0" mnemonicParsing="false" onAction="#changeR1toPay" text="Select Room" textFill="#8a23c2" />
+
+</AnchorPane>

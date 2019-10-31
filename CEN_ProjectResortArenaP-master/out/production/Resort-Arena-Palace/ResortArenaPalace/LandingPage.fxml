@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ResortArenaPalace.Controller">
+  <Tab fx:id="tab_home" text="Home Page">
+    <AnchorPane prefHeight="500.0" prefWidth="800.0">
+      <Button fx:id="btn_ckAv" layoutX="332.0" layoutY="399.0" mnemonicParsing="false" onAction="#changeScreenRoomAv" text="Check Availability" textFill="#14d0c7" />
+      <DatePicker fx:id="checkin_pick" layoutX="410.0" layoutY="359.0" prefHeight="31.0" prefWidth="117.0" promptText="Check in " />
+      <DatePicker fx:id="checkout_pick" layoutX="546.0" layoutY="359.0" prefHeight="31.0" prefWidth="117.0" promptText="Check out" />
+      <ComboBox fx:id="noguests_pick" layoutX="125.0" layoutY="359.0" prefHeight="31.0" prefWidth="129.0" promptText="No. Guests" />
+      <ComboBox fx:id="room_pick" layoutX="273.0" layoutY="359.0" prefHeight="31.0" prefWidth="119.0" promptText="1 room" />
+         <Button fx:id="btnSignin" layoutX="691.0" layoutY="26.0" mnemonicParsing="false" onAction="#changeScreenUserAccount" text="Sign In" />
+         <Button fx:id="btn_ManagerHome" layoutX="670.0" layoutY="399.0" mnemonicParsing="false" onAction="#changeHomeToManLog" text="Management" />
+         <Label fx:id="lbl_TitleHome" layoutX="212.0" layoutY="147.0" text="Resort Arena Palace" textFill="#2a88c3">
+            <font>
+               <Font size="41.0" />
+            </font>
+         </Label>
+         <Label layoutX="154.0" layoutY="338.0" text="No. Guests" />
+         <Label layoutX="297.0" layoutY="338.0" text="No. rooms" />
+    </AnchorPane>
+  </Tab>
+  <Tab fx:id="tab_wellness" text="Wellness">
+    <AnchorPane fx:id="wellnessLabel" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+         <children>
+            <Label fx:id="wellLabel" layoutX="257.0" layoutY="41.0" prefHeight="68.0" prefWidth="173.0" text="Wellness" textFill="#24e3ba" AnchorPane.topAnchor="41.0">
+               <font>
+                  <Font size="38.0" />
+               </font>
+            </Label>
+            <Label fx:id="gymLable" layoutX="124.0" layoutY="154.0" text="Gym">
+               <font>
+                  <Font name="System Italic" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="yogaLabel" layoutX="124.0" layoutY="218.0" text="Yoga">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="spaLabel" layoutX="124.0" layoutY="267.0" text="Spa">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+  </Tab>
+  <Tab fx:id="tab_events" text="Events">
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+         <children>
+            <Label fx:id="eventLabel" layoutX="308.0" layoutY="59.0" text="Events" textFill="#14d6a5">
+               <font>
+                  <Font size="32.0" />
+               </font>
+            </Label>
+            <Label layoutX="177.0" layoutY="170.0" text="Wedding" />
+            <Label fx:id="confrenceLable" layoutX="177.0" layoutY="211.0" text="Conference" />
+            <Label fx:id="celebrationLabel" layoutX="177.0" layoutY="260.0" text="Celebration" />
+         </children></AnchorPane>
+  </Tab>
+  <Tab fx:id="tab_restaurant" text="Restaurant">
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+         <children>
+            <Label fx:id="resnameLable" layoutX="317.0" layoutY="150.0" prefHeight="108.0" prefWidth="197.0" text="Palacios " textFill="#25dcc4">
+               <font>
+                  <Font size="37.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+  </Tab>
+</TabPane>

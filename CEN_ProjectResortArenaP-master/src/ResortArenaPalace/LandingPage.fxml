@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ResortArenaPalace.Controller">
+  <Tab fx:id="tab_home" text="Home Page">
+    <AnchorPane prefHeight="500.0" prefWidth="800.0">
+      <Button fx:id="btn_ckAv" layoutX="332.0" layoutY="399.0" mnemonicParsing="false" onAction="#changeScreenRoomAv" text="Check Availability" textFill="#14d0c7" />
+      <DatePicker fx:id="checkin_pick" layoutX="410.0" layoutY="359.0" prefHeight="31.0" prefWidth="117.0" promptText="Check in " />
+      <DatePicker fx:id="checkout_pick" layoutX="546.0" layoutY="359.0" prefHeight="31.0" prefWidth="117.0" promptText="Check out" />
+      <ComboBox fx:id="noguests_pick" layoutX="125.0" layoutY="359.0" prefHeight="31.0" prefWidth="129.0" promptText="No. Guests" />
+      <ComboBox fx:id="room_pick" layoutX="273.0" layoutY="359.0" prefHeight="31.0" prefWidth="119.0" promptText="1 room" />
+         <Button fx:id="btnSignin" layoutX="691.0" layoutY="26.0" mnemonicParsing="false" onAction="#changeScreenUserAccount" text="Sign In" />
+         <Button fx:id="btn_ManagerHome" layoutX="670.0" layoutY="399.0" mnemonicParsing="false" onAction="#changeHomeToManLog" text="Management" />
+         <Label fx:id="lbl_TitleHome" layoutX="224.0" layoutY="-1.0" prefHeight="54.0" prefWidth="302.0" text="Resort Arena Palace" textFill="#2a88c3">
+            <font>
+               <Font name="Monotype Corsiva" size="41.0" />
+            </font>
+         </Label>
+         <Label layoutX="154.0" layoutY="338.0" text="No. Guests" />
+         <Label layoutX="297.0" layoutY="338.0" text="No. rooms" />
+         <ImageView fx:id="resortPic" fitHeight="265.0" fitWidth="522.0" layoutX="123.0" layoutY="68.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../ResortPictures/UH0NeXII-1380x690.jpeg" />
+            </image>
+         </ImageView>
+    </AnchorPane>
+  </Tab>
+  <Tab fx:id="tab_wellness" text="Wellness">
+    <AnchorPane fx:id="wellnessLabel" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+         <children>
+            <Label fx:id="wellLabel" layoutX="307.0" prefHeight="68.0" prefWidth="163.0" text="Wellness" textAlignment="CENTER" textFill="#15d4a1" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font name="Monotype Corsiva" size="47.0" />
+               </font>
+            </Label>
+            <Button fx:id="ygaBtn" layoutX="74.0" layoutY="236.0" mnemonicParsing="false" text="Yoga" textFill="#13b4e1">
+               <font>
+                  <Font name="Monotype Corsiva" size="18.0" />
+               </font></Button>
+            <Button fx:id="gymBtn" layoutX="362.0" layoutY="415.0" mnemonicParsing="false" text="Gym" textAlignment="CENTER" textFill="#13b4e1">
+               <font>
+                  <Font name="Monotype Corsiva" size="18.0" />
+               </font></Button>
+            <Button fx:id="spaBtn" layoutX="644.0" layoutY="228.0" mnemonicParsing="false" text="Spa" textAlignment="CENTER" textFill="#13b4e1">
+               <font>
+                  <Font name="Monotype Corsiva" size="18.0" />
+               </font></Button>
+            <ImageView fx:id="yogaPic" fitHeight="151.0" fitWidth="246.0" layoutX="8.0" layoutY="72.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../ResortPictures/yoga.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="gymPic" fitHeight="279.0" fitWidth="292.0" layoutX="243.0" layoutY="246.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../ResortPictures/gym.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="194.0" fitWidth="247.0" layoutX="531.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../ResortPictures/spa.jpg" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+  </Tab>
+  <Tab fx:id="tab_events" text="Events">
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+         <children>
+            <Label fx:id="eventLabel" layoutX="312.0" layoutY="7.0" prefHeight="60.0" prefWidth="124.0" text="Events" textAlignment="CENTER" textFill="#14d6a5">
+               <font>
+                  <Font name="Monotype Corsiva" size="47.0" />
+               </font>
+            </Label>
+            <Button fx:id="weddingBtn" layoutX="60.0" layoutY="255.0" mnemonicParsing="false" text="Weddings" textAlignment="CENTER" textFill="#13b4e1">
+               <font>
+                  <Font name="Monotype Corsiva" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="celebrationBtn" layoutX="303.0" layoutY="376.0" mnemonicParsing="false" text="Celebrations" textAlignment="CENTER" textFill="#13b4e1">
+               <font>
+                  <Font name="Monotype Corsiva" size="18.0" />
+               </font>
+            </Button>
+            <Button layoutX="611.0" layoutY="237.0" mnemonicParsing="false" text="Conferences" textFill="#13b4e1">
+               <font>
+                  <Font name="Monotype Corsiva" size="18.0" />
+               </font>
+            </Button>
+            <ImageView fx:id="weddPic" fitHeight="197.0" fitWidth="180.0" layoutX="21.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../ResortPictures/wedding.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="celbPic" fitHeight="180.0" fitWidth="215.0" layoutX="247.0" layoutY="192.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../ResortPictures/celebration.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="conferencePic" fitHeight="151.0" fitWidth="235.0" layoutX="529.0" layoutY="87.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../ResortPictures/conference.jpg" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+  </Tab>
+  <Tab fx:id="tab_restaurant" text="Restaurant">
+    <AnchorPane fx:id="dessertBtn" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+         <children>
+            <Label fx:id="resnameLable" layoutX="303.0" prefHeight="60.0" prefWidth="254.0" text="Palacios'Menu " textFill="#14d6a5">
+               <font>
+                  <Font name="Monotype Corsiva" size="47.0" />
+               </font>
+            </Label>
+            <Button layoutX="71.0" layoutY="236.0" mnemonicParsing="false" text="Beverage" textFill="#13b4e1">
+               <font>
+                  <Font name="Monotype Corsiva" size="18.0" />
+               </font>
+            </Button>
+            <ImageView fx:id="beveragePic" fitHeight="161.0" fitWidth="218.0" layoutX="14.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../ResortPictures/beverage.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="foodPic" fitHeight="185.0" fitWidth="254.0" layoutX="528.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../ResortPictures/food.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="dessertPic" fitHeight="181.0" fitWidth="248.0" layoutX="254.0" layoutY="244.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../ResortPictures/dessert.jpg" />
+               </image>
+            </ImageView>
+            <Button layoutX="603.0" layoutY="335.0" mnemonicParsing="false" text="Desserts" textAlignment="CENTER" textFill="#13b4e1">
+               <font>
+                  <Font name="Monotype Corsiva" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="foodBtn" layoutX="349.0" layoutY="132.0" mnemonicParsing="false" text="Food" textFill="#13b4e1">
+               <font>
+                  <Font name="Monotype Corsiva" size="18.0" />
+               </font></Button>
+         </children></AnchorPane>
+  </Tab>
+</TabPane>

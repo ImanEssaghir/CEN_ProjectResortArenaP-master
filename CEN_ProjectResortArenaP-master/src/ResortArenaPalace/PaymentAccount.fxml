@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="718.0" prefWidth="466.0" xmlns="http://javafx.com/javafx/8.0.221" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ResortArenaPalace.PaymentAccount">
+    <Label layoutX="175.0" layoutY="31.0" prefHeight="34.0" prefWidth="101.0" text="Book Room" textFill="#100582e0">
+      <font>
+        <Font size="18.0" />
+      </font>
+    </Label>
+    <Button fx:id="btn_ReserveRoom" layoutX="298.0" layoutY="635.0" mnemonicParsing="false" onAction="#showConfirmation" prefHeight="30.0" prefWidth="121.0" text="Reserve Room" textFill="#14d0c7">
+      <font>
+        <Font size="14.0" />
+      </font>
+    </Button>
+    <Label layoutX="45.0" layoutY="89.0" prefHeight="30.0" prefWidth="114.0" text="Create Account">
+      <font>
+        <Font size="14.0" />
+      </font>
+    </Label>
+    <Label layoutX="68.0" layoutY="141.0" prefHeight="24.0" prefWidth="69.0" text="First Name" />
+    <Label layoutX="67.0" layoutY="170.0" prefHeight="30.0" prefWidth="57.0" text="Last Name" />
+    <Label layoutX="67.0" layoutY="206.0" prefHeight="30.0" prefWidth="57.0" text="Email" />
+    <Label layoutX="67.0" layoutY="239.0" prefHeight="25.0" prefWidth="57.0" text="Username" />
+    <Label layoutX="67.0" layoutY="273.0" prefHeight="25.0" prefWidth="57.0" text="Password" />
+    <Label layoutX="45.0" layoutY="346.0" prefHeight="30.0" prefWidth="142.0" text="Payment Information">
+      <font>
+        <Font size="14.0" />
+      </font>
+    </Label>
+    <TextField layoutX="188.0" layoutY="141.0" />
+    <TextField layoutX="188.0" layoutY="173.0" />
+    <TextField layoutX="188.0" layoutY="209.0" />
+    <TextField layoutX="188.0" layoutY="239.0" />
+    <PasswordField layoutX="188.0" layoutY="273.0" />
+    <Label layoutX="67.0" layoutY="386.0" prefHeight="25.0" prefWidth="101.0" text="Credit Card Type" />
+    <Label layoutX="67.0" layoutY="426.0" prefHeight="25.0" prefWidth="101.0" text="Credit Card No." />
+    <Label layoutX="67.0" layoutY="465.0" prefHeight="25.0" prefWidth="101.0" text="Expiration Date" />
+    <Label layoutX="67.0" layoutY="503.0" prefHeight="25.0" prefWidth="69.0" text="CVV" />
+    <Label layoutX="67.0" layoutY="533.0" prefHeight="30.0" prefWidth="121.0" text="Enter Coupon Code" />
+    <ChoiceBox fx:id="cBox_CCType" layoutX="187.0" layoutY="386.0" prefWidth="150.0" />
+    <TextField layoutX="188.0" layoutY="426.0" />
+    <TextField layoutX="188.0" layoutY="465.0" />
+    <TextField layoutX="188.0" layoutY="503.0" />
+    <TextField layoutX="188.0" layoutY="536.0" />
+   <Button fx:id="btn_GoBackRoomA" layoutX="65.0" layoutY="634.0" mnemonicParsing="false" onAction="#changePayToRoomA" text="Go back" />
+   <Label fx:id="lbl_RoomConf" layoutX="140.0" layoutY="683.0" prefHeight="21.0" prefWidth="186.0" />
+</Pane>
