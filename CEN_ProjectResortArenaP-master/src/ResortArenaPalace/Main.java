@@ -11,7 +11,7 @@ import javafx.stage.Stage;
  * @author Legendary Coders
  */
 
-
+//test comment
 public class Main extends Application {
 
     @Override
