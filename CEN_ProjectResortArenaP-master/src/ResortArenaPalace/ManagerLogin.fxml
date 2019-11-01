@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.221" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ResortArenaPalace.ManagerLogin">
+<AnchorPane prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.221" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ResortArenaPalace.ManagerLogin">
       <Label fx:id="lbl_ManagerLog" layoutX="320.0" layoutY="52.0" text="Manager Login">
          <font>
             <Font size="24.0" />

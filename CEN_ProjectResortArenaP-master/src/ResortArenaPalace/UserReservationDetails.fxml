@@ -7,7 +7,7 @@
 <?import javafx.scene.text.Font?>
 
 
-<AnchorPane prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.221" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ResortArenaPalace.UserReservationDetails">
+<AnchorPane prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.221" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ResortArenaPalace.UserReservationDetails">
       <Label fx:id="lbl_TitleReservation" layoutX="291.0" layoutY="56.0" text="Reservation Details">
          <font>
             <Font size="26.0" />

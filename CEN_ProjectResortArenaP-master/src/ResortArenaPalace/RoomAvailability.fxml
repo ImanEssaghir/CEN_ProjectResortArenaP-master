@@ -7,7 +7,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.TextFlow?>
 
-<AnchorPane fx:id="lbl_RoomAv" prefHeight="821.0" prefWidth="835.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ResortArenaPalace.RoomAvailability">
+<AnchorPane fx:id="lbl_RoomAv" prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ResortArenaPalace.RoomAvailability">
       <Label layoutX="319.0" layoutY="18.0" text="Room Availability" textFill="#14d0c7">
          <font>
             <Font size="28.0" />
