@@ -12,13 +12,12 @@ import javafx.stage.Stage;
  * @author Legendary Coders.
  */
 
-
 public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("LandingPage.fxml"));
-        primaryStage.setTitle("Resort Arena Palace 1");
+        primaryStage.setTitle("Resort Arena Palace");
         primaryStage.setScene(new Scene(root, 800, 500));
         primaryStage.show();
     }
