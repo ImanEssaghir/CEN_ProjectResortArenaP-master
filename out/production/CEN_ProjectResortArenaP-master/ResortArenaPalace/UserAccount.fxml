@@ -16,9 +16,7 @@
 
 <AnchorPane prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.221" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ResortArenaPalace.UserAccount">
    <ImageView fitHeight="800.0" fitWidth="1008.0" layoutX="-6.0" opacity="0.37" pickOnBounds="true">
-      <image>
          <Image url="@Login_PalmTree.jpg" />
-      </image>
    </ImageView>
    <AnchorPane layoutX="197.0" layoutY="112.0" opacity="0.91" prefHeight="600.0" prefWidth="669.0" style="-fx-background-color: white;" />
       <GridPane fx:id="UsAccountPane" layoutX="202.0" layoutY="117.0" prefHeight="580.0" prefWidth="659.0">
