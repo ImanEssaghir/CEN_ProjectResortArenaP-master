@@ -9,8 +9,6 @@ import java.sql.Connection;
 
 /**
  * Project Resort Arena Palace.
- * Team 7.
- * Description: The current version of the software includes tabs for the future pages.
  * @author Legendary Coders.
  */
 
@@ -37,13 +35,13 @@ public class Main extends Application {
 
     // Database Connection Test
 
-    final String JDBC_DRIVER = "org.h2.Driver";
-    final String DB_URL = "jdbc:h2:./res/test";
-    final String USER = "";
-    final String PASS = "";
+    private final String JDBC_DRIVER = "org.h2.Driver";
+    private final String DB_URL = "jdbc:h2:./res/test";
+    private final String USER = "";
+    private final String PASS = "";
     private static Connection conn;
 
-    public void testDatabaseConnection(){
+    private void testDatabaseConnection(){
         try {
             Class.forName(JDBC_DRIVER);
             conn = DriverManager.getConnection(DB_URL, USER, PASS);
