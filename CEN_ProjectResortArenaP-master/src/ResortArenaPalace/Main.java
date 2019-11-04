@@ -10,6 +10,8 @@ import java.sql.Connection;
 /**
  * Project Resort Arena Palace.
  * @author Legendary Coders.
+ *
+ * TEAM 7.
  */
 
 public class Main extends Application {
