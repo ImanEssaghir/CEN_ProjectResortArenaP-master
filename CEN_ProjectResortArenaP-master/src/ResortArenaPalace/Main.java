@@ -20,7 +20,7 @@ public class Main extends Application {
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("LandingPage.fxml"));
         primaryStage.setTitle("Resort Arena Palace");
-        primaryStage.setScene(new Scene(root, 1000, 800));
+        primaryStage.setScene(new Scene(root, 1000, 600));
         primaryStage.show();
         testDatabaseConnection();
     }

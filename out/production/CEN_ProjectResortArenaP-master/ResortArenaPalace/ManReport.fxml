@@ -1,28 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.net.URL?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.221" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ResortArenaPalace.ManReport">
-      <TableView fx:id="tablev_Report" layoutX="152.0" layoutY="115.0" prefHeight="322.0" prefWidth="496.0">
-        <columns>
-          <TableColumn prefWidth="75.0" text="Room" />
-          <TableColumn prefWidth="75.0" text="Guest" />
-            <TableColumn prefWidth="75.0" text="Check In" />
-            <TableColumn prefWidth="101.0" text="Check Out" />
-        </columns>
-      </TableView>
-      <Label fx:id="lbl_TitleReport" layoutX="262.0" layoutY="54.0" text="Resort Arena Palace Report">
-         <font>
-            <Font size="24.0" />
-         </font>
-      </Label>
-      <Button fx:id="btn_CancelR" layoutX="255.0" layoutY="443.0" mnemonicParsing="false" text="Cancel Reservation" />
-      <Button fx:id="btn_SoldOut" layoutX="429.0" layoutY="443.0" mnemonicParsing="false" text="Sold Out" />
-      <Button fx:id="btn_BackRepToMan" layoutX="24.0" layoutY="23.0" mnemonicParsing="false" onAction="#changeRepToManLog" text="Go Home" />
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.221" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ResortArenaPalace.ManReport">
+  <TableView fx:id="tablev_Report" layoutX="23.0" layoutY="115.0" prefHeight="322.0" prefWidth="929.0">
+    <columns>
+      <TableColumn fx:id="col_Roomnum" prefWidth="75.0" text="Room #" />
+      <TableColumn fx:id="col_FirstName" prefWidth="75.0" text="First Name" />
+      <TableColumn fx:id="col_LastName" prefWidth="92.0" text="Last Name" />
+      <TableColumn fx:id="col_NPeople" prefWidth="84.0" text="N. People" />
+      <TableColumn fx:id="col_Nrooms" prefWidth="75.0" text="N. Rooms" />
+      <TableColumn fx:id="col_CheckIn" prefWidth="84.0" text="Check In" />
+      <TableColumn fx:id="col_CheckOut" prefWidth="103.0" text="Check Out" />
+      <TableColumn fx:id="col_RType" prefWidth="132.0" text="Room Type" />
+      <TableColumn fx:id="col_Email" prefWidth="208.0" text="Email" />
+    </columns>
+  </TableView>
+  <Label fx:id="lbl_TitleReport" layoutX="343.0" layoutY="54.0" text="Resort Arena Palace Report">
+    <font>
+      <Font size="24.0" />
+    </font>
+  </Label>
+  <Button fx:id="btn_CancelR" layoutX="275.0" layoutY="540.0" mnemonicParsing="false" onAction="#cancelReservation" text="Cancel Reservation" />
+  <Button fx:id="btn_SoldOut" layoutX="590.0" layoutY="540.0" mnemonicParsing="false" text="Sold Out" />
+  <Button fx:id="btn_BackRepToMan" layoutX="24.0" layoutY="23.0" mnemonicParsing="false" onAction="#changeRepToManLog" text="Go Home" />
+  <TextField fx:id="txt_roomNumb" layoutX="60.0" layoutY="459.0" prefHeight="31.0" prefWidth="76.0" promptText="Room #" />
+  <TextField fx:id="txt_Fname" layoutX="136.0" layoutY="459.0" prefHeight="31.0" prefWidth="89.0" promptText="First name" />
+  <TextField fx:id="txt_Lname" layoutX="225.0" layoutY="459.0" prefHeight="31.0" prefWidth="89.0" promptText="Last Name" />
+  <TextField fx:id="txt_Npeople" layoutX="314.0" layoutY="459.0" prefHeight="31.0" prefWidth="76.0" promptText="N. People" />
+  <TextField fx:id="txt_nRooms" layoutX="390.0" layoutY="459.0" prefHeight="31.0" prefWidth="76.0" promptText="N. Rooms" />
+  <TextField fx:id="txt_CheckIn" layoutX="466.0" layoutY="459.0" prefHeight="31.0" prefWidth="76.0" promptText="Check In" />
+  <TextField fx:id="txt_CheckOut" layoutX="542.0" layoutY="459.0" prefHeight="31.0" prefWidth="89.0" promptText="Check Out" />
+  <TextField fx:id="txt_RoomType" layoutX="631.0" layoutY="459.0" prefHeight="31.0" prefWidth="99.0" promptText="Room Type" />
+  <TextField fx:id="txt_Email" layoutX="730.0" layoutY="459.0" prefHeight="31.0" prefWidth="188.0" promptText="Email" />
+  <Button fx:id="btn_AddGuest" layoutX="446.0" layoutY="540.0" mnemonicParsing="false" onAction="#addGuest" text="Add New Guest" />
+  <stylesheets>
+    <URL value="@ArenaStyle.css" />
+  </stylesheets>
 </AnchorPane>
