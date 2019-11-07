@@ -31,8 +31,9 @@ public class PaymentAccount {
   private Label lbl_RoomConf;
 
   private ObservableList<String> cCType = FXCollections.observableArrayList("MasterCard", "Visa",
-          "AmericanExpress", "Discovery");
-  public void initialize(){
+      "AmericanExpress", "Discovery");
+
+  public void initialize() {
     cBox_CCType.setItems(cCType);//sets the items in the comboBox
     cBox_CCType.getSelectionModel().selectFirst();//Sets a default value in the comboBox
   }
@@ -48,8 +49,13 @@ public class PaymentAccount {
   }
 
   @FXML
-  void showConfirmation(ActionEvent event) {
-    lbl_RoomConf.setText("Room Booked. Thank You!");
-  }
+  void showConfirmation(ActionEvent event) throws IOException {
+    Parent payParent = FXMLLoader.load(getClass().getResource("ConfirmMessage.fxml"));
+    Scene payScene = new Scene(payParent);
 
+    Stage payWindow = (Stage) ((Node) event.getSource()).getScene().getWindow();
+    payWindow.setScene(payScene);
+    payWindow.show();
+
+  }
 }
