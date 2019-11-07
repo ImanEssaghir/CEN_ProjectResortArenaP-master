@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DialogPane?>
+
+<DialogPane fx:id="dialog_p" contentText="Thank You! Your Reservation is booked " headerText="Booking Confirmation" onMouseClicked="#userDetails" prefHeight="85.0" prefWidth="303.0" stylesheets="@ArenaStyle.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ResortArenaPalace.ConfirmMessage">
+   <graphic>
+      <Button fx:id="OkayBtn" mnemonicParsing="false" onAction="#userDetails" text="Summary" />
+   </graphic>
+</DialogPane>
