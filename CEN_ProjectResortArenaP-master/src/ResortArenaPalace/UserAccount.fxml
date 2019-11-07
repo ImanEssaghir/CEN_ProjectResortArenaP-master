@@ -14,12 +14,12 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.221" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ResortArenaPalace.UserAccount">
-   <ImageView fitHeight="800.0" fitWidth="1008.0" layoutX="-6.0" opacity="0.37" pickOnBounds="true">
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.221" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ResortArenaPalace.UserAccount">
+   <ImageView fitHeight="712.0" fitWidth="1008.0" layoutX="-6.0" opacity="0.37" pickOnBounds="true">
          <Image url="@Login_PalmTree.jpg" />
    </ImageView>
-   <AnchorPane layoutX="197.0" layoutY="112.0" opacity="0.91" prefHeight="600.0" prefWidth="669.0" style="-fx-background-color: white;" />
-      <GridPane fx:id="UsAccountPane" layoutX="202.0" layoutY="117.0" prefHeight="580.0" prefWidth="659.0">
+   <AnchorPane layoutX="197.0" layoutY="112.0" opacity="0.91" prefHeight="484.0" prefWidth="669.0" style="-fx-background-color: white;" />
+      <GridPane fx:id="UsAccountPane" layoutX="202.0" layoutY="96.0" prefHeight="580.0" prefWidth="659.0">
         <columnConstraints>
           <ColumnConstraints hgrow="SOMETIMES" maxWidth="493.0" minWidth="10.0" prefWidth="492.0" />
           <ColumnConstraints hgrow="SOMETIMES" maxWidth="609.0" minWidth="10.0" prefWidth="508.0" />
