@@ -29,11 +29,7 @@ public class Main extends Application {
         launch(args);
     }
 
-
-
-
-
-
+    /*Check line 48 and 25 there is an error */
 
     // Database Connection Test
 
