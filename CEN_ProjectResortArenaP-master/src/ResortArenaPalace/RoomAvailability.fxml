@@ -10,8 +10,8 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.TextFlow?>
 
-<AnchorPane fx:id="lbl_RoomAv" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ResortArenaPalace.RoomAvailability">
-  <ImageView fitHeight="575.0" fitWidth="1000.0" layoutY="-13.0" opacity="0.13" pickOnBounds="true">
+<AnchorPane fx:id="lbl_RoomAv" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ResortArenaPalace.RoomAvailability">
+  <ImageView fitHeight="650.0" fitWidth="1500.0" layoutY="-13.0" opacity="0.13" pickOnBounds="true">
     <Image url="@Login_PalmTree.jpg" />
   </ImageView>
   <Label layoutX="357.0" layoutY="13.0" text="Room Availability" textFill="#14d0c7">
