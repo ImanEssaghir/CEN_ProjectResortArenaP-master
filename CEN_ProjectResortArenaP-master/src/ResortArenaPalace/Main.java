@@ -34,7 +34,7 @@ public class Main extends Application {
     // Database Connection Test
 
     private final String JDBC_DRIVER = "org.h2.Driver";
-    private final String DB_URL = "jdbc:h2:./res/test";
+    private final String DB_URL = "jdbc:h2:./res/arenadb";
     private final String USER = "";
     private final String PASS = "";
     private static Connection conn;
