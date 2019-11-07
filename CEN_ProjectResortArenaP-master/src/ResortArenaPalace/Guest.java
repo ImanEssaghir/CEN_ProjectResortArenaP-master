@@ -4,15 +4,15 @@ import java.util.Date;
 
 public class Guest {
 
+  private String email;
   private String name;
   private String lastName;
   private int noPeople;
   private int noRooms;
-  private Date checkIn;
-  private Date checkOut;
+  private String checkIn;
+  private String checkOut;
   private String roomType;
   private String password;
-  private String email;
 
   public String getEmail() {
     return email;
@@ -54,19 +54,19 @@ public class Guest {
     this.noRooms = noRooms;
   }
 
-  public Date getCheckIn() {
+  public String getCheckIn() {
     return checkIn;
   }
 
-  public void setCheckIn(Date checkIn) {
+  public void setCheckIn(String checkIn) {
     this.checkIn = checkIn;
   }
 
-  public Date getCheckOut() {
+  public String getCheckOut() {
     return checkOut;
   }
 
-  public void setCheckOut(Date checkOut) {
+  public void setCheckOut(String checkOut) {
     this.checkOut = checkOut;
   }
 
@@ -83,6 +83,19 @@ public class Guest {
   }
 
   public void setPassword(String password) {
+    this.password = password;
+  }
+
+  public Guest(String email, String name, String lastName, int noPeople, int noRooms,
+      String checkIn, String checkOut, String roomType, String password) {
+    this.email = email;
+    this.name = name;
+    this.lastName = lastName;
+    this.noPeople = noPeople;
+    this.noRooms = noRooms;
+    this.checkIn = checkIn;
+    this.checkOut = checkOut;
+    this.roomType = roomType;
     this.password = password;
   }
 
