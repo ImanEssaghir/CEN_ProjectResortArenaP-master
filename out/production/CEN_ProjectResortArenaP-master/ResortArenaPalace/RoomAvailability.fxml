@@ -14,7 +14,7 @@
   <ImageView fitHeight="650.0" fitWidth="1500.0" layoutY="-13.0" opacity="0.13" pickOnBounds="true">
     <Image url="@Login_PalmTree.jpg" />
   </ImageView>
-  <Label layoutX="357.0" layoutY="13.0" text="Room Availability" textFill="#14d0c7">
+  <Label layoutX="357" layoutY="13.0" text="Room Availability" textFill="#14d0c7">
     <font>
       <Font size="28.0" />
     </font>

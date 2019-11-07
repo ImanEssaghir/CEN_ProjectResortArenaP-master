@@ -117,6 +117,66 @@ import javafx.stage.Stage;
 
   }
 
+
+  private Connection conn = null;
+  private Statement stmt = null;
+
+  public void initialize() {
+    initializeDB();
+    populateGuestTableReport();
+  }
+
+  private void initializeDB() {
+    final String JDBC_DRIVER = "org.h2.Driver";
+    final String DB_URL = "jdbc:h2:./res/arenadb";
+    final String USER = "";
+    final String PASS = "";
+
+    System.out.println("Attempting to connect to database");
+    try {
+      Class.forName(JDBC_DRIVER);
+      conn = DriverManager.getConnection(DB_URL, USER, PASS);
+      stmt = conn.createStatement();
+      System.out.println("Successfully connected to database!");
+    } catch (Exception e) {
+      e.printStackTrace();
+      Alert a = new Alert(Alert.AlertType.ERROR);
+      a.show();
+    }
+  }
+  ObservableList<Guest> glist = FXCollections.observableArrayList();
+
+  //@Override
+  // public void initialize(URL location, ResourceBundle resources) {
+  public void populateGuestTableReport(){
+    col_Email.setCellValueFactory(new PropertyValueFactory<>("email"));
+    col_FirstName.setCellValueFactory(new PropertyValueFactory<>("name"));
+    col_LastName.setCellValueFactory(new PropertyValueFactory<>("lastName"));
+    col_NPeople.setCellValueFactory(new PropertyValueFactory<>("noPeople"));
+    col_Nrooms.setCellValueFactory(new PropertyValueFactory<>("noRooms"));
+    col_CheckIn.setCellValueFactory(new PropertyValueFactory<>("checkIn"));
+    col_CheckOut.setCellValueFactory(new PropertyValueFactory<>("checkOut"));
+    col_RType.setCellValueFactory(new PropertyValueFactory<>("roomType"));
+    col_Password.setCellValueFactory(new PropertyValueFactory<>("password"));
+    try {
+      String sql = "SELECT * FROM Guest";
+      ResultSet rs = stmt.executeQuery(sql);
+      while (rs.next()) {
+
+        glist.add(new Guest(rs.getString("EMAIL"),rs.getString("NAME"),
+            rs.getString("LASTNAME"), Integer.parseInt(rs.getString("NOPEOPLE")),
+            Integer.parseInt(rs.getString("NOROOMS")), rs.getString("CHECKIN"),
+            rs.getString("CHECKOUT"), rs.getString("ROOMTYPE"),
+            rs.getString("PASSWORD") ));
+      }
+
+    } catch (SQLException e) {
+      e.printStackTrace();
+    }
+
+
+    tablev_Report.setItems(glist);
+  }
    /*Kristy is working on populating the Guest list for the Manager Report
   private Connection conn = null;
   private Statement stmt = null;
