@@ -33,3 +33,7 @@ The software product to be produced is a Resort Booking System which will automa
 5.	Restaurant Selling: The system will both keep track of the sold meals and beverages, as well as charge the related room. 
 6.	Rooms Management:  This will provide a summary of all the rooms that are either booked or vacant to the resort Manager. It will also allow the manager to check if the rooms are being sold out and to handle reservations' cancellation. 
 
+## Final Version of the project
+See the following link:
+
+https://github.com/krislowg/Palace7.git
